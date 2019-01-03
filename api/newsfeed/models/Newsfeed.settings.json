@@ -1,0 +1,38 @@
+{
+  "connection": "default",
+  "collectionName": "newsfeed",
+  "info": {
+    "name": "newsfeed",
+    "description": "Content About All News"
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "Title": {
+      "default": "",
+      "type": "string"
+    },
+    "Subtitle": {
+      "default": "",
+      "type": "string"
+    },
+    "Body": {
+      "default": "",
+      "type": "text"
+    },
+    "Created": {
+      "default": "",
+      "type": "date"
+    },
+    "user": {
+      "model": "user",
+      "via": "newsfeeds",
+      "plugin": "users-permissions"
+    },
+    "Image": {
+      "default": "",
+      "type": "text"
+    }
+  }
+}
